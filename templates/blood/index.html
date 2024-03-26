@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    {% load static %}
+    <!---------------------------------------------bootstrap icon cdn---------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+    <!---------------------------------------------bootstrap cdn--------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <!---------------------------------------------fontawesome icon cdn-------------------------------------->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!---------------------------------------------main css-------------------------------------------------->
+    <link rel="stylesheet" href="{%static 'css/style.css'%}" />
+
+    <style>
+        .home{
+            width: 100%;
+            height: 230px;
+            background-image: url(static/image/home.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+      </style>
+</head>
+
+<body>
+{% include "blood/navbar.html" %}
+<div class="home"></div>
+
+<div class="container">
+    <div class="col-lg-9">
+        <div id="content">
+            <span class="fw-bold">Select Donor Blood Type :</span>
+            <div id="blood_selector">
+                <div>O−</div>
+                <div>O+</div>
+                <div>A−</div>
+                <div>A+</div>
+                <div>B−</div>
+                <div>B+</div>
+                <div>AB−</div>
+                <div>AB+</div>
+            </div>
+
+            <div id="blood_content">
+                <div class="bar"></div>
+                <div class="main_bag">
+                    <div class="blood"></div>
+                </div>
+            </div>
+            
+            <div id="center_via_c">
+                <div class="center_via">
+                    <div class="blood_via"></div>
+                </div>
+            </div>
+            
+            <div id="humans">
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">O−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+            
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">O+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+            
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">A−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+            
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">A+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+            
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">B−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+            
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">B+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+            
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">AB−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+            
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">AB+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <p class="text-center" style="font-size:20px">"The blood you donate gives someone another chance at life"</p>
+</div>
+
+<br>
+{% include "blood/footer.html" %}
+
+<script src="{% static 'js/script.js'%}"></script>
+</body>
+
+</html>
